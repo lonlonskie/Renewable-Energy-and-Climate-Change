@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Renewable Energy & Climate Change</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <style>
+    body { background-color: #f0f9f4; }
+    #map { height: 400px; }
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Green
+  * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center accent-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Empowering a Sustainable Future</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#calculation">Footprint Calculation</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section accent-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Explore Renewable Energy & Combat Climate Change</h2>
+            <p> Discover innovative renewable energy solutions and learn how you can reduce your carbon footprint to combat climate change. Together, we can create a sustainable future for generations to come.</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Sustainable Solutions for a Greener Earth</h2>
+            <p>"From reducing carbon emissions to promoting energy efficiency, every step forward brings us closer to a healthier planet."</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Clean Energy, Brighter Tomorrow</h2>
+            
+            <p>"Transitioning to renewable energy not only preserves the planet but also powers communities with sustainable and reliable solutions."</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+            
+              <h4><a class="stretched-link">Energy Efficiency</a></h4>
+              <p>"Maximize the impact of renewable energy with innovative technologies that reduce waste and enhance sustainability."</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+             
+              <h4><a class="stretched-link">Green Technologies</a></h4>
+              <p>"Embrace cutting-edge solutions like solar, wind, and geothermal energy to power the future with clean and renewable resources."</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              
+              <h4><a class="stretched-link">Carbon Footprint Reduction</a></h4>
+              <p> "Learn how small changes in daily habits and renewable energy solutions can significantly reduce your carbon footprint."</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+             
+              <h4><a  class="stretched-link">Community Impact</a></h4>
+              <p> "Join hands with us to promote climate-friendly practices and create a greener, healthier environment for future generations."</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+    
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <a href=https://www.youtube.com/watch?v=H1jVz5uxQ8o class="glightbox pulsating-play-btn"></a>
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Empowering a Greener Future Through Innovation</h3>
+            <p class="fst-italic">
+              We are committed to creating a sustainable world by promoting renewable energy solutions and advocating for climate action. Our mission is to bridge the gap between awareness and action, enabling individuals, businesses, and communities to reduce their carbon footprint and embrace a greener lifestyle.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span> <h2>Objective:</h2>•🌱 Promote Renewable Energy: Provide insights into the benefits of solar, wind, hydro, and geothermal energy. <br>
+                •🌍 Raise Climate Awareness: Share valuable resources and tools, including a carbon footprint calculator and live renewable energy usage maps. <br>
+                • 🔍 Inspire Action: Showcase real-world success stories and practical solutions for a sustainable lifestyle. <br></span></li>
+              <li><i class="bi bi-check2-all"></i> <span> <h2>Our Purpose:</h2>We believe that every step toward sustainability counts. Whether you’re looking to reduce energy consumption at home, implement green technologies at work, or simply learn more about climate change, our platform offers the knowledge and tools you need. <br>
+
+                •🌏 Educate and Engage: We provide a wealth of information that encourages eco-friendly habits, from everyday tips to in-depth research on climate solutions. <br>
+                
+                • 🤝 Support Green Initiatives: We collaborate with environmental groups, businesses, and governments to promote sustainable practices and advocate for climate-friendly policies. <br>
+                
+                •🌱 Create Lasting Impact: Our purpose is not just to inform but to transform. We strive to turn climate awareness into tangible actions, ensuring a healthier planet for future generations. <br>
+              
+              
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="100">
+            <span>01</span>
+            
+            <h4>Switch to Renewable Energy</h4>
+            <p>Transition your home and business to renewable energy sources like solar, wind, hydro, and geothermal power. This reduces greenhouse gas emissions and promotes a sustainable future.</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="200">
+            <span>02</span>
+            <h4>Reduce Energy Consumption</h4>
+            <p>Utilize energy-efficient appliances, switch to LED lighting, and adopt smart home technologies to minimize unnecessary energy usage. Small changes can lead to big impacts.</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="300">
+            <span>03</span>
+            <h4> Support Green Initiatives</h4>
+            <p>Participate in local tree-planting events, support green businesses, and advocate for policies that promote sustainability and renewable energy development.`</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
+            <span>04</span>
+            <h4>Embrace Sustainable Transportation</h4>
+            <p>Opt for electric vehicles, public transportation, biking, or walking whenever possible. Reducing fossil fuel consumption can significantly lower your carbon footprint.
+
+            </p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
+            <span>05</span>
+            <h4>Educate and Inspire Others</h4>
+            <p>Share knowledge about renewable energy and climate change. Encourage friends and family to adopt sustainable practices and support renewable initiatives.
+
+            </p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="600">
+            <span>06</span>
+            <h4>Monitor Your Carbon Footprint</h4>
+            <p>Use a carbon footprint calculator to understand your environmental impact and take actionable steps to reduce it.</p>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+       
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-activity icon"></i>
+              <h3><a href="service-details.html" class="read-more stretched-link">Solar Energy Solutions</a></h3>
+              <p>Harness the Power of the Sun <br>
+                We provide end-to-end solar panel solutions, from design and installation to maintenance. Our team ensures optimal energy efficiency, helping reduce your carbon footprint and save on energy bills..</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <i class="bi bi-broadcast icon"></i>
+              <h3><a href="service-details.html#wind" class="read-more stretched-link">Wind Energy Development</a></h3>
+              <p>Transforming Wind into Power <br>
+                Our experts analyze geographic and climatic data to set up efficient wind turbine systems. Whether for residential, commercial, or community projects, we deliver sustainable and renewable wind energy solutions.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <i class="bi bi-easel icon"></i>
+              <h3><a href="service-details.html#hydro" class="read-more stretched-link">Hydro Energy Projects</a></h3>
+              <p>Flowing Towards Sustainability <br>
+                We specialize in hydroelectric power systems that convert water flow into renewable energy. Our projects range from small-scale river installations to large hydroelectric dams, providing consistent and eco-friendly power.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-red position-relative">
+              <i class="bi bi-bounding-box-circles icon"></i>
+              <h3><a href="service-details.html#geo" class="read-more stretched-link">Geothermal Energy Services</a></h3>
+              <p>Tapping into Earth’s Heat <br>
+                We implement geothermal heating and cooling technologies, offering an innovative way to maintain indoor climates efficiently. This sustainable approach reduces greenhouse gas emissions and energy costs.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+              <i class="bi bi-calendar4-week icon"></i>
+              <h3><a href="service-details.html#carbon" class="read-more stretched-link">Carbon Footprint Assessment</a></h3>
+              <p>Measure, Reduce, and Offset <br>
+                Our carbon footprint calculator and consulting services help individuals and businesses understand their environmental impact. We provide actionable strategies to reduce carbon emissions and promote sustainable practices.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-pink position-relative">
+              <i class="bi bi-chat-square-text icon"></i>
+              <h3><a href="service-details.html#energy" class="read-more stretched-link">Energy Efficiency Consulting</a></h3>
+              <p>Maximizing Efficiency, Minimizing Waste
+                Our consultants perform energy audits and recommend solutions to optimize energy consumption. From LED lighting to smart energy management systems, we help create more sustainable environments.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section accent-background">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>"Learn More About Our Services"</h3>
+            <p>Protecting the planet starts with you. Let’s work together for cleaner air, greener spaces, and a healthier world.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="https://www.youtube.com/watch?v=gLvkWpnzba8"> Learn More</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Portfolio Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Green Energy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#calculator">Carbon Calculator</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#map">Live Maps</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <section id="calculation" class="container my-5">
+     
+        <h2>Carbon Footprint Calculator</h2>
+        <form id="carbonForm">
+            <div class="mb-3">
+                <label for="milesDriven" class="form-label">Miles Driven per Week</label>
+                <input type="number" class="form-control" id="milesDriven" required>
+            </div>
+            <div class="mb-3">
+                <label for="electricityUsage" class="form-label">Electricity Usage (kWh per Month)</label>
+                <input type="number" class="form-control" id="electricityUsage" required>
+            </div>
+            <button type="submit" class="btn btn-success">Calculate</button>
+        </form>
+        <p id="result" class="mt-3"></p>
+    </section>
+
+    <!-- Live Renewable Energy Usage Map -->
+    <h2>Live Renewable Energy Usage Map</h2>
+    <section id="map" class="container my-5">
+        
+        <div id="map"></div>
+    </section>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Carbon Footprint Calculator
+        document.getElementById('carbonForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const miles = parseFloat(document.getElementById('milesDriven').value) || 0;
+            const electricity = parseFloat(document.getElementById('electricityUsage').value) || 0;
+            const carbon = (miles * 0.404) + (electricity * 0.7);
+            document.getElementById('result').textContent = `Estimated Carbon Footprint: ${carbon.toFixed(2)} kg CO₂ per month`;
+        });
+
+        // Initialize Map
+        const map = L.map('map').setView([12.6728, 123.8756], 15);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Updated Marker for Sorsogon State University - Bulan Campus
+        L.marker([12.6728, 123.8756]).addTo(map)
+            .bindPopup('Sorsogon State University - Bulan Campus')
+            .openPopup();
+    </script>
+
+
+    <!-- Team Section -->
+    <section id="team" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Meet Our Team</h2>
+        <p><h4>Empowering Minds, Inspiring Futures!</h4></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Joesan Gile</h4>
+                <span>Web Developer</span>
+                <p>
+                  <strong>contribution:</strong> Modify the home page, adding images, and map.
+                 
+                </p>
+                <div class="social">
+                 
+                  <a href="https://www.facebook.com/joesan.gile.7"><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                 
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Sophia jean Gipanao</h4>
+                <span>Content Strategist</span>
+                <p>
+                  <strong>contribution:</strong> Think and manage project content.
+                </p>
+                <div class="social">
+                 
+                  <a href="https://www.facebook.com/sophiajean.echanegipanao"><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Leila Ermino</h4>
+                <span>Desingner</span>
+                <p>
+                  <strong>contribution</strong>Embed videos from YouTube and add About Us page.
+                </p>
+                <div class="social">
+                  
+                  <a href="https://www.facebook.com/lleiighh"><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Marlon Bono</h4>
+                <span>Desingner</span>
+                <p>
+                  <strong>contribution:</strong> Adding some information about on services .
+                </p>
+                <div class="social">
+                  
+                  <a href="https://www.facebook.com/marlon.bono.31"><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                                 
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>MV8J+FJW, T. De Castro Street, Bulan, 4706 Sorsogon</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+09122705688</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.202930542282!2d123.88087186038125!3d12.666880118293102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a0d13fff8aaf73%3A0x522fbc0bf84c6fa!2sSorsogon%20State%20University%20-%20Bulan%20Campus!5e0!3m2!1sen!2sph!4v1741582782917!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">🌍 Green Initiative</span>
+          </a>
+          <p></p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="service-details.html">Solar Energy Systems</a></li>
+            <li><a href="service-details.html#wind#">Wind Power Solutions</a></li>
+            <li><a href="service-details.html#hydro">Hydropower Integration</a></li>
+            <li><a href="service-details.html#geo">Geothermal Energy Project</a></li>
+            <li><a href="service-details.html#carbon">Carbon Footprint Reduction</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>Bulan,Sorsogon</p>
+          <p>MV8J+FJW, T. De Castro Street, Bulan, 4706 Sorsogon</p>
+          <p>Sorsogon State University - Bulan Campus</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+09122705688</span></p>
+          <p><strong>Email:</strong> <span>info@example.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Green</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
